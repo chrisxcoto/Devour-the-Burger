@@ -5,7 +5,10 @@ var burger = require("../models/burger.js");
 
 // get route -> index
 router.get("/", function(req, res) {
-  res.redirect("/index");
+  console.log(
+    'in here'
+  )
+  res.render("index");
 });
 
 router.get("/index", function(req, res) {
